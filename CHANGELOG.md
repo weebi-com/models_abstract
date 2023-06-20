@@ -1,6 +1,10 @@
-### 1.4.2
+### 1.4.4
 
-intl: ^0.18.0
+photos in a dedicated class
+
+### 1.4.3
+
+change a comma somewhere
 
 ### 1.4.2
 
