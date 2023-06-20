@@ -1,0 +1,18 @@
+name: models_base
+version: 1.4.3
+homepage: https://github.com/flutter-painter/models_base
+#publish_to: https://onepub.dev/api/xnxpsdavuh/
+description: base models
+environment: 
+  sdk: '>=2.19.6 <4.0.0' #'>=3.0.0 <4.0.0'
+dependencies: 
+  collection: ^1.15.0
+  http: ^0.13.4 #^0.12.0
+  intl: ^0.17.0
+  mobx: ^2.0.3
+  sembast: ^3.0.2
+dev_dependencies: 
+  lints: ^1.0.1 #2.1.0
+  test: ^1.16.0
+  build_runner: ^2.1.4
+  mobx_codegen: ^2.0.4

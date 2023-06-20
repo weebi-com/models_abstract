@@ -1,0 +1,6 @@
+.packages
+pubspec.lock
+.dart_tool/package_config.json
+lib/.DS_Store
+.dart_tool/version
+.dart_tool/package_config_subset
