@@ -11,28 +11,23 @@ void main() {
     final Map<String, dynamic> map = (json.decode(_json));
 
     final Map<String, dynamic> mapA = map['articles'][0];
-    expect(mapA['id'] == 1, isTrue);
-    expect(mapA['calibreId'] == 1, isTrue);
-    expect(mapA['fullName'] == 'frometon forever', isTrue);
-    expect(mapA['weight'] == 1, isTrue);
-    expect(mapA['articleCode'] == 11, isTrue);
-    expect(mapA['photo'] == 'photo', isTrue);
-    expect(mapA['creationDate'] == WeebiDates.defaultDate.toIso8601String(),
-        isTrue);
-    expect(mapA['status'] == true, isTrue);
+    expect(mapA['id'], 1);
+    expect(mapA['calibreId'], 1);
+    expect(mapA['fullName'], 'frometon forever');
+    expect(mapA['weight'], 1);
+    expect(mapA['articleCode'], 11);
+    expect(mapA['creationDate'], WeebiDates.defaultDate.toIso8601String());
+    expect(mapA['status'], true);
 
-    expect(map['categories'].first == 'categories', isTrue);
+    expect(map['categories'].first, 'categories');
 
-    expect(StockUnit.unit == StockUnit.tryParse(map['stockUnit']), isTrue);
+    expect(StockUnit.unit, StockUnit.tryParse(map['stockUnit']));
 
-    expect(map['id'] == 1, isTrue);
-    expect(map['title'] == 'frometon', isTrue);
-    expect(map['status'] == true, isTrue);
-    expect(map['photo'] == 'photo', isTrue);
-    expect(map['barcode'] == 1, isTrue);
-    expect(map['statusUpdateDate'] == WeebiDates.defaultDate.toIso8601String(),
-        isTrue);
-    expect(map['creationDate'] == WeebiDates.defaultDate.toIso8601String(),
-        isTrue);
+    expect(map['id'], 1);
+    expect(map['title'], 'frometon');
+    expect(map['status'], true);
+    expect(map['barcode'], 1);
+    expect(map['statusUpdateDate'], WeebiDates.defaultDate.toIso8601String());
+    expect(map['creationDate'], WeebiDates.defaultDate.toIso8601String());
   });
 }

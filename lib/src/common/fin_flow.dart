@@ -16,10 +16,10 @@ extension FlowType on List<FinFlow> {
 
 class FinFlow {
   final String type;
-  int sumTickets;
-  int sumClosings;
+  num sumTickets;
+  num sumClosings;
   FinFlow(this.type, {required this.sumTickets, this.sumClosings = 0});
-  int get sumTotal => (sumTickets + sumClosings);
+  num get sumTotal => (sumTickets + sumClosings);
 
   // s'incrémente à chaque fois...
   static final emptyFinancials = List<FinFlow>.generate(

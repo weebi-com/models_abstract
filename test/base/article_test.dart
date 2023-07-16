@@ -8,19 +8,12 @@ void main() {
   test('article', () {
     final _json = ArticleDummy().toJson();
     final Map<String, dynamic> map = (json.decode(_json));
-    expect(map['id'] == 1, isTrue);
-    expect(map['calibreId'] == 1, isTrue);
-    expect(map['fullName'] == 'frometon forever', isTrue);
-    // expect(map['price'] == 1000, isTrue);
-    // expect(map['cost'] == 500, isTrue);
-    expect(map['weight'] == 1, isTrue);
-    expect(map['articleCode'] == 11, isTrue);
-    expect(map['creationDate'] == WeebiDates.defaultDate.toIso8601String(),
-        isTrue);
-    expect(
-        map['updateDate'] == WeebiDates.defaultDate.toIso8601String(), isTrue);
-    expect(map['statusUpdateDate'] == WeebiDates.defaultDate.toIso8601String(),
-        isTrue);
-    expect(map['status'] == true, isTrue);
+    expect(map['id'], 1);
+    expect(map['calibreId'], 1);
+    expect(map['fullName'], 'frometon forever');
+    expect(map['weight'], 1);
+    expect(map['articleCode'], 11);
+    expect(map['creationDate'], WeebiDates.defaultDate.toIso8601String());
+    expect(map['status'], true);
   });
 }

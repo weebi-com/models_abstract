@@ -18,7 +18,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
   final double promo; //cvo
   final String comment; // comment || used for tank, cuve
   final String contactPastPurchasingPower; // used for Axe in collecte lait
-  final int received;
+  final num received;
   final DateTime date;
   final PaiementType paiementType;
   final TicketType ticketType;

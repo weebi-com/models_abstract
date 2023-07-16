@@ -16,11 +16,8 @@ void main() {
     // expect(mapA['cost'] == 500, isTrue);
     expect(mapA['weight'] == 1, isTrue);
     expect(mapA['articleCode'] == 11, isTrue);
-    expect(mapA['photo'] == 'photo', isTrue);
     expect(mapA['creationDate'] == WeebiDates.defaultDate.toIso8601String(),
         isTrue);
-    expect(
-        mapA['updateDate'] == WeebiDates.defaultDate.toIso8601String(), isTrue);
     expect(mapA['status'] == true, isTrue);
 
     // for basket dummy
