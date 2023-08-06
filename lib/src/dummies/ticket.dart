@@ -19,7 +19,6 @@ class TicketDummy extends TicketAbstract {
           date: WeebiDates.defaultDate,
           paiementType: PaiementType.nope,
           ticketType: TicketType.stockOut,
-          contactPastPurchasingPower: 'contactPastPurchasingPower',
           status: true,
           statusUpdateDate: WeebiDates.defaultDate,
           creationDate: WeebiDates.defaultDate,

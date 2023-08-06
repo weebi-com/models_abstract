@@ -1,3 +1,7 @@
+### 1.4.6
+
+remove pastPurchasingPower from ticket, error prone
+
 ### 1.4.5
 
 money as num

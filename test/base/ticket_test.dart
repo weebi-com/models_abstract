@@ -47,8 +47,7 @@ void main() {
     // expect(map['received'] == 0, isTrue);
     expect(map['herderId'] == '1', isTrue);
     expect(map['date'] == WeebiDates.defaultDate.toIso8601String(), isTrue);
-    expect(map['contactPastPurchasingPower'] == 'contactPastPurchasingPower',
-        isTrue);
+
     expect(map['status'] == true, isTrue);
     expect(map['statusUpdateDate'] == WeebiDates.defaultDate.toIso8601String(),
         isTrue);

@@ -1,11 +1,11 @@
 abstract class FinancialSums {
-  final int sell;
-  final int sellCovered;
-  final int sellDeferred;
-  final int spend;
-  final int spendCovered;
-  final int spendDeferred;
-  final int wage;
+  final num sell;
+  final num sellCovered;
+  final num sellDeferred;
+  final num spend;
+  final num spendCovered;
+  final num spendDeferred;
+  final num wage;
   const FinancialSums(
     this.sell,
     this.sellCovered,

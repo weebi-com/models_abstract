@@ -15,9 +15,8 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
   final String shopUuid;
   final List<I> items;
   final T taxe;
-  final double promo; //cvo
-  final String comment; // comment || used for tank, cuve
-  final String contactPastPurchasingPower; // used for Axe in collecte lait
+  final double promo;
+  final String comment; // comment
   final num received;
   final DateTime date;
   final PaiementType paiementType;
@@ -36,8 +35,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
     required this.items,
     required this.taxe,
     this.promo = 0.0,
-    this.comment = '', // used for tank, cuve
-    this.contactPastPurchasingPower = '', // used for Axe in collecte lait
+    this.comment = '',
     required this.received,
     required this.date,
     required this.paiementType,
@@ -57,7 +55,6 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
       'taxe': taxe.toMap(),
       'promo': promo,
       'comment': comment,
-      'contactPastPurchasingPower': contactPastPurchasingPower,
       'received': received,
       'date': date.toIso8601String(),
       'paiementType': paiementType.toString(),
@@ -84,7 +81,6 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
         other.taxe == taxe &&
         other.promo == promo &&
         other.comment == comment &&
-        other.contactPastPurchasingPower == contactPastPurchasingPower &&
         other.received == received &&
         other.date == date &&
         other.paiementType == paiementType &&
@@ -104,7 +100,6 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
         taxe.hashCode ^
         promo.hashCode ^
         comment.hashCode ^
-        contactPastPurchasingPower.hashCode ^
         received.hashCode ^
         date.hashCode ^
         paiementType.hashCode ^
