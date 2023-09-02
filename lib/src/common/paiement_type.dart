@@ -36,17 +36,19 @@ class PaiementType {
     }
   }
 
-  static String paiementString(PaiementType paiement) {
-    if (paiement == PaiementType.nope) {
+  String get paiementString {
+    if (_paiementType == PaiementType.nope.toString()) {
       return 'À crédit';
-    } else if (paiement == PaiementType.mobileMoney) {
+    } else if (_paiementType == PaiementType.mobileMoney.toString()) {
       return 'Mobile Money';
-    } else if (paiement == PaiementType.cheque) {
+    } else if (_paiementType == PaiementType.cheque.toString()) {
       return 'Chèque';
-    } else if (paiement == PaiementType.goods) {
+    } else if (_paiementType == PaiementType.goods.toString()) {
       return 'Biens';
-    } else if (paiement == PaiementType.cash) {
+    } else if (_paiementType == PaiementType.cash.toString()) {
       return 'Cash';
+    } else if (_paiementType == PaiementType.cb.toString()) {
+      return 'Carte Bancaire';
     } else {
       return 'Inconnu';
     }

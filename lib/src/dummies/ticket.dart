@@ -15,7 +15,7 @@ class TicketDummy extends TicketAbstract {
           promo: 0.0,
           comment: 'comment',
           received: 0,
-          herderId: '1',
+          herderIdString: '1',
           date: WeebiDates.defaultDate,
           paiementType: PaiementType.nope,
           ticketType: TicketType.stockOut,

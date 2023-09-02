@@ -21,7 +21,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
   final DateTime date;
   final PaiementType paiementType;
   final TicketType ticketType;
-  final String herderId;
+  final String herderIdString;
   @observable
   final bool status;
   final DateTime statusUpdateDate;
@@ -40,7 +40,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
     required this.date,
     required this.paiementType,
     required this.ticketType,
-    required this.herderId,
+    required this.herderIdString,
     required this.status,
     required this.statusUpdateDate,
     required this.creationDate,
@@ -59,7 +59,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
       'date': date.toIso8601String(),
       'paiementType': paiementType.toString(),
       'ticketType': ticketType.toString(),
-      'herderId': herderId,
+      'herderId': herderIdString,
       'status': status,
       'statusUpdateDate': statusUpdateDate.toIso8601String(),
       'creationDate': creationDate.toIso8601String(),
@@ -85,7 +85,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
         other.date == date &&
         other.paiementType == paiementType &&
         other.ticketType == ticketType &&
-        other.herderId == herderId &&
+        other.herderIdString == herderIdString &&
         other.status == status &&
         other.statusUpdateDate == statusUpdateDate &&
         other.creationDate == creationDate &&
@@ -104,7 +104,7 @@ abstract class TicketAbstract<I extends ItemAbstract, T extends TaxAbstract> {
         date.hashCode ^
         paiementType.hashCode ^
         ticketType.hashCode ^
-        herderId.hashCode ^
+        herderIdString.hashCode ^
         status.hashCode ^
         statusUpdateDate.hashCode ^
         creationDate.hashCode ^
