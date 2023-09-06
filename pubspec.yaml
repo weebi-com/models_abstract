@@ -8,7 +8,9 @@ environment:
 dependencies: 
   collection: ^1.15.0
   http: ^0.13.4 #^0.12.0
-  intl: ^0.17.0
+  #only asked to upgrade intl when full null safety compat requested,
+  # prefer downgrading flutter version to 3.7.12 for nown
+  intl: ^0.17.0 
   mobx: ^2.0.3
   sembast: ^3.0.2
 dev_dependencies: 
