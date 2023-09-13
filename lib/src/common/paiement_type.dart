@@ -14,6 +14,14 @@ class PaiementType {
   static const PaiementType cb = PaiementType._('cb');
   static const PaiementType unknown = PaiementType._('');
 
+  static List<PaiementType> allPaiementTypes = [
+    cash,
+    nope,
+    mobileMoney,
+    // cb, // * not visibile yet
+    // cheque, // * not visibile yet
+  ];
+
   static PaiementType tryParse(String val) {
     switch (val) {
       case 'cash':

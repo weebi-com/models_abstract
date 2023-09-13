@@ -23,7 +23,19 @@ class TicketType {
     spend,
     spendDeferred,
     spendCovered,
-    wage,
+    // wage, // not available yet
+  ];
+
+  static List<TicketType> allTicketTypes = [
+    sell,
+    sellDeferred,
+    sellCovered,
+    spend,
+    spendDeferred,
+    spendCovered,
+    stockIn,
+    stockOut,
+    // wage, // not available yet
   ];
 
   bool get isShopInput =>
