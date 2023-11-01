@@ -1,5 +1,5 @@
 name: models_base
-version: 1.4.6
+version: 1.4.6+1
 homepage: https://github.com/flutter-painter/models_base
 #publish_to: https://onepub.dev/api/xnxpsdavuh/
 description: base models
@@ -9,7 +9,7 @@ dependencies:
   collection: ^1.15.0
   http: ^0.13.4 #^0.12.0
   #only asked to upgrade intl when full null safety compat requested,
-  # prefer downgrading flutter version to 3.7.12 for nown
+  # prefer downgrading flutter version to 3.7.12 for now
   intl: ^0.17.0 
   mobx: ^2.0.3
   sembast: ^3.0.2
